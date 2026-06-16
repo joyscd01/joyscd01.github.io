@@ -1,0 +1,669 @@
+:root {
+    /* La tua palette i3wm */
+    --i3-purple-dark: #321d68;
+    --i3-purple-medium: #75507b;
+    --i3-yellow: #fce94f;
+    --i3-cyan: #00e5ff;
+    --i3-white: #ffffff;
+}
+
+/* =========================================
+   1. BACKGROUND E BODY
+   ========================================= */
+html, body {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -10; 
+    filter: blur(8px);
+    opacity: 0.9;
+    transition: filter 0.5s ease, opacity 0.5s ease, background-image 0.5s ease !important;
+}
+
+/* =========================================
+   2. HEADER TRASPARENTE
+   ========================================= */
+.header, 
+.nav,
+.header.blur,
+body.dark .header,
+body.dark .header.blur {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* =========================================
+   3. PROFILO E TESTI
+   ========================================= */
+.profile {
+    min-height: auto !important; 
+    transform: none !important;
+}
+
+/* Ancoriamo il blocco in alto con una distanza fissa, per evitare che "salti" quando apri la tendina */
+main.main:has(.profile_inner) {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important; /* Smette di ricalcolare il centro dinamicamente */
+    padding-top: 25vh !important; /* Questa è l'altezza della foto. Modifica questo numero! */
+    min-height: 100vh !important;
+}
+
+.profile_inner img {
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border: 2px solid var(--i3-yellow) !important;
+    border-radius: 50% !important;
+}
+
+.profile_inner h1 + span,
+.profile_inner h1 + p,
+.profile-subtitle {
+    display: inline-block !important;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--i3-cyan);
+    margin: 10px auto 0 auto;
+    font-family: 'Fira Code', 'Source Code Pro', 'Courier New', monospace !important;
+    font-size: 1.1rem;
+    width: 31ch;
+    animation:
+        typing 2.5s steps(31, end) forwards,
+        blink-caret 0.85s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 31ch; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--i3-cyan); }
+}
+
+.logo a {
+    -webkit-text-stroke: 1px var(--i3-cyan);
+    color: var(--i3-yellow) !important;
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 800;
+    text-transform: lowercase;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+    border: none !important; 
+    background: none !important; 
+    transition: all 0.3s ease !important;
+}
+
+.logo a:hover {
+    -webkit-text-stroke: 1.5px var(--i3-cyan);
+    text-shadow: 0 0 20px var(--i3-cyan);
+    color: var(--i3-cyan) !important;
+    trasform: translateY(-2px);
+}
+
+/* =========================================
+   4. MENU E TASTO GATTO
+   ========================================= */
+#menu {
+    overflow-y: hidden !important; 
+    padding-top: 10px !important;  
+    padding-bottom: 10px !important; 
+}
+
+#menu li a, .menu a, #menu a span {
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 800 !important;
+    color: var(--i3-yellow) !important;
+    -webkit-text-stroke: 1px var(--i3-cyan) !important;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.4) !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    background: none !important;
+    letter-spacing: 0.5px;
+}
+
+#menu li a:hover, .menu a:hover, #menu a span:hover {
+    color: var(--i3-cyan) !important; /* Accende il testo di ciano */
+    -webkit-text-stroke: 1.5px var(--i3-cyan) !important; /* Bordo più spesso */
+    text-shadow: 0 0 20px var(--i3-cyan) !important; /* Bagliore più ampio */
+    transform: translateY(-2px);
+}
+
+#cat-reveal-btn {
+    margin-left: 25px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: grayscale(100%) brightness(150%);
+}
+#cat-reveal-btn:hover {
+    transform: scale(1.2) rotate(-10deg);
+    filter: grayscale(0%) drop-shadow(0 0 10px var(--i3-cyan));
+}
+
+/* =========================================
+   5. TENDINA WHAT'S NEW
+   ========================================= */
+#whats-new-dropdown {
+    margin: 15px auto 20px auto; /* Gestisce la distanza in modo naturale */
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    width: 90%; /* Perfetto per il mobile, non sborderà mai */
+    border: 1px solid var(--i3-purple-medium);
+    border-radius: 4px;
+    background: rgba(50, 29, 104, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+#whats-new-dropdown summary {
+    cursor: pointer;
+    padding: 15px 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    color: var(--i3-white);
+    list-style: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#whats-new-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+#whats-new-dropdown summary:hover {
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--i3-cyan);
+}
+
+#whats-new-dropdown[open] summary {
+    border-bottom: 1px solid var(--i3-cyan);
+    color: var(--i3-yellow);
+}
+
+.wn-icon {
+    color: var(--i3-cyan);
+    margin-right: 10px;
+    font-weight: 800;
+}
+#whats-new-dropdown[open] .wn-icon { color: var(--i3-yellow); }
+
+.whats-new-posts {
+    padding: 20px;
+    animation: fadeInDown 0.4s ease forwards;
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.wn-post-link {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 3px solid var(--i3-purple-medium);
+    color: var(--i3-white);
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.wn-post-link:hover {
+    border-left-color: var(--i3-cyan);
+    background: rgba(0, 229, 255, 0.05);
+    transform: translateX(8px);
+    color: var(--i3-white);
+}
+
+.wn-date {
+    color: var(--i3-yellow);
+    margin-right: 15px;
+    font-weight: bold;
+}
+.wn-title { color: var(--i3-white); }
+.wn-post-link:hover .wn-title {
+    color: var(--i3-cyan);
+    text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+}
+
+/* =========================================
+   6. STEALTH (CAT) MODE
+   ========================================= */
+#menu li, .logo, .main, .footer {
+    transition: opacity 0.5s ease, visibility 0.5s ease !important;
+}
+
+body.cat-mode #menu li,
+body.cat-mode .logo,
+body.cat-mode .main,
+body.cat-mode .footer {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+body.cat-mode #menu li:has(#cat-reveal-btn) {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+body.cat-mode::before {
+    filter: blur(0px) !important;
+    background-image: url('/images/background.jpeg') !important;
+    opacity: 1 !important;
+}
+
+body.cat-mode #cat-reveal-btn {
+    filter: grayscale(0%) drop-shadow(0 0 10px var(--i3-yellow));
+    animation: pulse-cat 2s infinite;
+}
+
+@keyframes pulse-cat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* =========================================
+   7. DIRECTORY WRITEUPS (Estetica Terminale)
+   ========================================= */
+.hacker-directory summary {
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 800 !important;
+    font-size: 1.5rem;
+    color: var(--i3-yellow) !important;
+    -webkit-text-stroke: 1px var(--i3-cyan) !important;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.4) !important;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease !important;
+    list-style: none; 
+}
+
+.hacker-directory summary::-webkit-details-marker { display: none; }
+
+.hacker-directory summary::before {
+    content: "[+] ";
+    color: var(--i3-cyan);
+    -webkit-text-stroke: 0px; 
+    text-shadow: none;
+}
+.hacker-directory details[open] summary::before {
+    content: "[-] ";
+    color: var(--i3-yellow);
+}
+
+.hacker-directory summary:hover {
+    -webkit-text-stroke: 1.2px var(--i3-cyan) !important;
+    text-shadow: 0 0 15px var(--i3-cyan) !important;
+    transform: translateX(5px); 
+}
+
+.hacker-directory ul {
+    list-style-type: none; 
+    border-left: 2px dashed var(--i3-purple-medium);
+    padding-left: 20px;
+    margin-left: 15px;
+}
+
+.hacker-directory li {
+    font-family: 'Fira Code', monospace;
+    color: var(--i3-white);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.hacker-directory li::before {
+    content: "➜ ";
+    color: var(--i3-purple-medium);
+}
+
+.hacker-directory a {
+    color: var(--i3-cyan) !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.hacker-directory a:hover {
+    color: var(--i3-yellow) !important;
+    border-bottom: 1px solid var(--i3-yellow);
+    text-shadow: 0 0 8px rgba(252, 233, 79, 0.6);
+}
+
+/* =========================================
+   8. BARRA DI RICERCA WRITEUPS (Grep Mode)
+   ========================================= */
+.hacker-search-container {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--i3-purple-medium);
+    border-left: 3px solid var(--i3-cyan);
+    padding: 12px 15px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    transition: all 0.3s ease;
+}
+
+.hacker-search-container:focus-within {
+    border-color: var(--i3-cyan);
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.2);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hacker-search-container .prompt {
+    color: var(--i3-cyan);
+    margin-right: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+#writeupSearch {
+    background: transparent;
+    border: none;
+    color: var(--i3-white);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+}
+
+#writeupSearch::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-style: italic;
+}
+
+/* =========================================
+   9. WHOAMI PROFILE (Neofetch Layout)
+   ========================================= */
+.hacker-terminal-window {
+    background: rgba(10, 10, 15, 0.85); 
+    border: 1px solid var(--i3-purple-medium);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-top: 20px;
+    font-family: 'Fira Code', monospace;
+}
+
+.terminal-top-bar {
+    background: #1e1e2e;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--i3-purple-medium);
+}
+
+.term-buttons {
+    display: none !important;
+}
+
+.term-title {
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.terminal-body {
+    padding: 20px;
+}
+
+.term-cmd {
+    color: var(--i3-white);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.prompt {
+    color: var(--i3-cyan);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.term-cursor {
+    animation: blink-caret 1s step-end infinite;
+    color: var(--i3-cyan);
+    font-weight: bold;
+}
+
+.neofetch-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.neo-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--i3-yellow);
+    object-fit: cover;
+}
+
+.neo-info h2 {
+    color: var(--i3-cyan);
+    margin: 0 0 5px 0;
+    font-size: 1.8rem;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+}
+
+.neo-info h2 .at {
+    color: var(--i3-cyan);
+}
+
+.neo-separator {
+    color: var(--i3-white);
+    margin-bottom: 15px;
+}
+
+.neo-info p {
+    color: var(--i3-white);
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.neo-label {
+    color: var(--i3-purple-medium);
+    font-weight: bold;
+}
+
+.neo-colors { display: flex; gap: 0; }
+.blk { display: inline-block; width: 25px; height: 15px; }
+.bg-dark { background: #21222c; }
+.bg-red { background: #ff5555; }
+.bg-green { background: #50fa7b; }
+.bg-yellow { background: #f1fa8c; }
+.bg-blue { background: #bd93f9; }
+.bg-purple { background: #ff79c6; }
+.bg-cyan { background: #8be9fd; }
+.bg-white { background: #f8f8f2; }
+
+.term-output {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-left: 20px;
+    border-left: 2px solid var(--i3-purple-medium);
+    padding-left: 15px;
+}
+
+.mt-3 { margin-top: 15px; }
+.mt-4 { margin-top: 25px; }
+
+@media (max-width: 600px) {
+    .neofetch-container { flex-direction: column; align-items: center; }
+    .neo-info { text-align: center; }
+}
+
+.term-output ul {
+    list-style-type: none !important; /* Uccide i pallini standard */
+    padding-left: 10px !important;    /* Spinge la lista lontana dalla riga viola */
+    margin-top: 10px;
+}
+
+.term-output ul li {
+    margin-bottom: 8px;
+    position: relative;
+    color: var(--i3-white) !important;
+}
+
+/* Aggiungiamo il prompt hacker al posto del pallino */
+.term-output ul li::before {
+    content: "~ "; /* Puoi cambiarlo con ">", "-", o "[+]" se preferisci */
+    color: var(--i3-yellow); /* Freccia ciano per staccare dal testo bianco */
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+ /* =========================================
+   10. CONTAINER WRITEUPS (FORZATURA TOTALE)
+   ========================================= */
+
+main.main > article {
+    background: rgba(10, 10, 15, 0.85) !important;
+    border: 1px solid var(--i3-purple-medium) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    padding: 40px !important;
+    margin-top: 20px !important;
+    position: relative;
+    z-index: 10;
+}
+
+/* Forza la leggibilità dei testi principali */
+main.main > article .post-content,
+main.main > article .post-header {
+    color: var(--i3-white) !important;
+}
+
+main.main > article .post-title {
+    color: var(--i3-white) !important;
+    -webkit-text-stroke: 1px var(--i3-cyan) !important;
+    text-shadow: 0 0 12px rgba(0, 229, 255, 0.6) !important;
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+}
+
+/* Titoli H1, H2, H3 */
+main.main > article .post-content h1,
+main.main > article .post-content h2,
+main.main > article .post-content h3 {
+    color: var(--i3-cyan) !important;
+    border-bottom: 1px dashed var(--i3-purple-medium);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Testo in grassetto (**testo** nel Markdown) */
+main.main > article .post-content strong,
+main.main > article .post-content b {
+    color: var(--i3-white) !important;
+    font-weight: 800 !important;
+}
+
+/* Link all'interno dell'articolo */
+main.main > article .post-content a {
+    color: var(--i3-purple-medium) !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid var(--i3-purple-medium) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Effetto interattivo al passaggio del mouse sui link */
+main.main > article .post-content a:hover {
+    color: var(--i3-cyan) !important;
+    border-bottom-color: var(--i3-cyan) !important;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.4) !important;
+}
+
+/* =========================================
+   FIX DEFINITIVO SCROLLBAR & OVERLAP 
+   ========================================= */
+
+/* 1. Il contenitore torna alle sue dimensioni esatte (centratura perfetta 15px) */
+main.main > article .post-content pre {
+    background: #1e1e2e !important;
+    border: 1px solid var(--i3-purple-medium) !important;
+    border-left: 3px solid var(--i3-yellow) !important;
+    border-radius: 4px !important;
+    padding: 10px 15px !important; 
+    overflow-x: auto !important;
+    margin: 20px 0 !important;
+}
+
+/* 2. Uccidiamo il flexbox di Hugo che sfalsa i bordi del testo */
+main.main > article .post-content pre code span[style*="display:flex"] {
+    display: block !important; 
+/*    line-height: 1.6 !important; /* Mantiene la scritta al sicuro dalla barra */
+}
+
+/* 3. Forziamo la barra sottile su TUTTI i livelli per evitare espansioni del sistema operativo */
+main.main > article .post-content pre,
+main.main > article .post-content .highlight,
+main.main > article .post-content pre code {
+    scrollbar-width: thin !important;
+    scrollbar-color: var(--i3-purple-medium) transparent !important;
+}
+
+/* Ripristina lo stile dei blocchetti inline (singolo backtick) */
+main.main > article .post-content code {
+    background: rgba(117, 80, 123, 0.4) !important;
+    color: var(--i3-yellow) !important;
+    padding: 3px 6px !important;
+    border-radius: 4px !important;
+}
+
+/* Mantiene pulito e trasparente SOLO il testo dentro i terminali neri */
+main.main > article .post-content pre code {
+    background: transparent !important;
+    color: var(--i3-white) !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* =========================================
+   11. TERMINAL LINKS (Bottoni Repo)
+   ========================================= */
+.term-output a, .neo-info a {
+    color: var(--i3-yellow) !important;
+    text-decoration: none !important;
+    font-weight: 800;
+    background: rgba(117, 80, 123, 0.2); /* Sfondo i3-purple leggero */
+    padding: 2px 8px;
+    border: 1px solid var(--i3-purple-medium);
+    border-radius: 4px;
+    transition: all 0.3s ease !important;
+    display: inline-block;
+}
+
+.term-output a:hover, .neo-info a:hover {
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--i3-cyan) !important;
+    border-color: var(--i3-cyan);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    transform: translateY(-2px);
+}

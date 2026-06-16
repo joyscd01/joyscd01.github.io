@@ -1,0 +1,52 @@
+{{- define "main" }}
+
+<div class="hacker-terminal-window">
+    <!-- Barra superiore stile finestra -->
+    <div class="terminal-top-bar">
+        <div class="term-buttons">
+            <span class="term-btn close"></span>
+            <span class="term-btn min"></span>
+            <span class="term-btn max"></span>
+        </div>
+        <div class="term-title">joy.scd01@0xe29884: ~</div>
+    </div>
+
+    <!-- Corpo del terminale -->
+    <div class="terminal-body">
+        
+        <!-- COMANDO 1: neofetch -->
+        <p class="term-cmd"><span class="prompt">root@0xe29884:~#</span> neofetch --user joy.scd01</p>
+        
+        <div class="neofetch-container">
+            <!-- Lato Sinistro: La tua foto (usa la classe profile_inner img che hai già) -->
+            <div class="neo-image">
+                <img src="/images/joyscd01.jpeg" alt="Avatar"> 
+            </div>
+            
+            <!-- Lato Destro: Le tue info -->
+            <div class="neo-info">
+                <h2>joy.scd01<span class="at">@</span>0xe29884</h2>
+                <div class="neo-separator">-------------------</div>
+                <p><span class="neo-label">Name</span>: Gioele Mureddu</p>
+                <p><span class="neo-label">Role</span>: Penetration Tester / Red Teamer</p>
+                <p><span class="neo-label">Certs</span>: eJPT, OSCP candidate</p>
+                <p><span class="neo-label">Uptime</span>: 24/7 (Powered by curiosity)</p>
+                
+                <!-- Blocchi colore tipici di neofetch -->
+                <div class="neo-colors mt-3">
+                    <span class="blk bg-dark"></span><span class="blk bg-red"></span><span class="blk bg-green"></span><span class="blk bg-yellow"></span><span class="blk bg-blue"></span><span class="blk bg-purple"></span><span class="blk bg-cyan"></span><span class="blk bg-white"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMANDO 2: cat about.txt -->
+        <p class="term-cmd mt-4"><span class="prompt">root@0xe29884:~#</span> cat /etc/motd</p>
+        
+        <!-- Qui Hugo inietta il testo che hai scritto nel file Markdown -->
+        <div class="term-output mt-2">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+{{- end }}

@@ -1,0 +1,51 @@
+{{- define "main" }}
+
+<!-- La nostra barra di ricerca stile terminale -->
+<div class="hacker-search-container">
+    <span class="prompt">root@0xe29884:~# grep -i </span>
+    <input type="text" id="writeupSearch" placeholder="'box name'..." autocomplete="off">
+</div>
+
+<!-- Il contenuto originale con le tendine -->
+<div class="post-content hacker-directory">
+  {{ .Content }}
+</div>
+
+<!-- Lo script per il filtro istantaneo -->
+<script>
+document.getElementById('writeupSearch').addEventListener('keyup', function() {
+    let filter = this.value.toLowerCase();
+    let detailsBlocks = document.querySelectorAll('.hacker-directory details');
+
+    detailsBlocks.forEach(detail => {
+        let items = detail.querySelectorAll('li');
+        let hasVisibleItem = false;
+
+        items.forEach(item => {
+            let text = item.textContent.toLowerCase();
+            if (text.includes(filter)) {
+                item.style.display = '';
+                hasVisibleItem = true;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        // Se sto cercando qualcosa, apri la tendina se contiene risultati
+        if (filter !== '') {
+            if (hasVisibleItem) {
+                detail.open = true;
+                detail.style.display = '';
+            } else {
+                detail.style.display = 'none'; // Nascondi intera piattaforma se non ha match
+            }
+        } else {
+            // Se svuoto la barra, mostra tutte le piattaforme e chiudi le tendine
+            detail.style.display = '';
+            detail.open = false;
+        }
+    });
+});
+</script>
+
+{{- end }}

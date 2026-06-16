@@ -1,0 +1,10 @@
+public/
+resources/
+.hugo_build.lock
+
+.vscode/
+.obsidian/
+
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,73 @@
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // === [1] IL BOTTONE GATTO ===
+    const catBtn = document.createElement('span');
+    catBtn.innerHTML = '🐱';
+    catBtn.id = 'cat-reveal-btn';
+    catBtn.title = 'Inizia sequenza di override...';
+
+    const menu = document.querySelector('#menu');
+    if(menu) {
+        const catLi = document.createElement('li');
+        catLi.style.display = 'flex';
+        catLi.style.alignItems = 'center';
+        catLi.appendChild(catBtn);
+        menu.insertBefore(catLi, menu.firstChild);
+    }
+
+    catBtn.addEventListener('click', () => {
+        document.body.classList.toggle('cat-mode');
+    });
+
+    // === [2] LA TENDINA WHAT'S NEW (Metodo JSON Sicuro) ===
+    const profileDiv = document.querySelector('.profile');
+
+    if (profileDiv) {
+        
+        // 1. Chiediamo a Hugo di prendere i file e creare un oggetto dati pulito (nessun tag HTML qui!)
+        {{ $pages := where site.RegularPages "Type" "in" (slice "posts" "writeups") }}
+        {{ $pages = $pages.ByDate.Reverse }}
+        {{ $postsData := slice }}
+        {{ range first 5 $pages }}
+            {{ $postsData = $postsData | append (dict "permalink" .Permalink "date" (.Date.Format "2006-01-02") "title" .Title) }}
+        {{ end }}
+        
+        // 2. Passiamo i dati a JS in formato JSON in totale sicurezza
+        const recentPosts = {{ $postsData | jsonify | safeJS }};
+        
+        // 3. Javascript puro costruisce la tendina
+        const details = document.createElement('details');
+        details.id = 'whats-new-dropdown';
+        
+        let htmlContent = `
+            <summary><span class="wn-icon">[+]</span> <span class="wn-text">cat whats_new.log</span></summary>
+            <div class="whats-new-posts">
+        `;
+        
+        if (recentPosts && recentPosts.length > 0) {
+            recentPosts.forEach(post => {
+                htmlContent += `
+                <a href="${post.permalink}" class="wn-post-link">
+                    <span class="wn-date">[${post.date}]</span>
+                    <span class="wn-title">${post.title}</span>
+                </a>`;
+            });
+        } else {
+            htmlContent += `<div class="wn-post-link"><span class="wn-title">Error: 404 Nessun log trovato.</span></div>`;
+        }
+        
+        htmlContent += `</div>`;
+        details.innerHTML = htmlContent;
+
+        // 4. Cambia l'icona
+        details.addEventListener('toggle', () => {
+            const icon = details.querySelector('.wn-icon');
+            if(icon) icon.textContent = details.open ? '[-]' : '[+]';
+        });
+
+        // 5. Inseriamo la tendina completata
+        profileDiv.parentNode.insertBefore(details, profileDiv.nextSibling);
+    }
+});
+</script>
