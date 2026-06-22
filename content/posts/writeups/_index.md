@@ -6,6 +6,7 @@ type: "writeups_menu"
 <details>
 <summary><strong>HackTheBox</strong></summary>
 <ul>
+    <li><strong>BigBang</strong>: <a href="pwned/en_writeuphtb_bigbang/">EN</a> | <a href="pwned/it_writeuphtb_bigbang/">IT</a></li>
     <li><strong>Backfire</strong>: <a href="pwned/en_writeuphtb_backfire/">EN</a> | <a href="pwned/it_writeuphtb_backfire/">IT</a></li>
     <li><strong>Conversor</strong>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a></li>
     <li><strong>Alert</strong>: <a href="pwned/en_writeuphtb_alert/">EN</a> | <a href="pwned/it_writeuphtb_alert/">IT</a></li>

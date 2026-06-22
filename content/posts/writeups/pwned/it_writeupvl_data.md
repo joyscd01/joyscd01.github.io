@@ -3,9 +3,9 @@ date = '2026-05-23T19:18:39+02:00'
 draft = false
 title = 'Data Writeup IT'
 +++
-**Nome**: `joy.scd01`
+**Nome**: **`joy.scd01`**
 
-**Data**: `05/06/2025`
+**Data**: **`05/06/2025`**
 
 ![data_slide.png](/images/imgs_data/data_slide.png)
 

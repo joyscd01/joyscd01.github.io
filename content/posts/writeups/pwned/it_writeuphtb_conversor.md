@@ -3,9 +3,9 @@ date = '2026-05-20T18:45:11+02:00'
 draft = false
 title = 'Conversor Writeup IT'
 +++
-**Nome:** `joy.scd01`
+**Nome:** **`joy.scd01`**
 
-**Data:** `24/01/2025`
+**Data:** **`24/01/2025`**
 
 ![conversor_pwned.png](/images/imgs_conversor/conversor_pwned.png)
 
