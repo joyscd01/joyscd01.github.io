@@ -5,7 +5,7 @@ title = 'BigBang Writeup EN'
 +++
 **Name:** **`joy.scd01`**
 
-**Date:** **`24/01/2025`**
+**Date:** **`01/02/2025`**
 
 ![BigBang.png](/images/imgs_bigbang/BigBang.jpeg)
 

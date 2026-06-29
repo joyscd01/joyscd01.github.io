@@ -9,6 +9,10 @@ type: "writeups_menu"
     <li><strong>BigBang</strong>: <a href="pwned/en_writeuphtb_bigbang/">EN</a> | <a href="pwned/it_writeuphtb_bigbang/">IT</a></li>
     <li><strong>Backfire</strong>: <a href="pwned/en_writeuphtb_backfire/">EN</a> | <a href="pwned/it_writeuphtb_backfire/">IT</a></li>
     <li><strong>Conversor</strong>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a></li>
+    <li><strong>Optimum</strong>: <a href="pwned/en_writeuphtb_optimum/">EN</a> | <a href="pwned/it_writeuphtb_optimum/">IT</a></li>
+    <li><strong>Busqueda</strong>: <a href="pwned/en_writeuphtb_busqueda/">EN</a> | <a href="pwned/it_writeuphtb_busqueda/">IT</a></li>
+    <li><strong>Sense</strong>: <a href="pwned/en_writeuphtb_sense/">EN</a> | <a href="pwned/it_writeuphtb_sense/">IT</a></li>
+    <li><strong>Netmon</strong>: <a href="pwned/en_writeuphtb_netmon/">EN</a> | <a href="pwned/it_writeuphtb_netmon/">IT</a></li>
     <li><strong>Alert</strong>: <a href="pwned/en_writeuphtb_alert/">EN</a> | <a href="pwned/it_writeuphtb_alert/">IT</a></li>
     <li><strong>Cap</strong>: <a href="pwned/en_writeuphtb_cap/">EN</a> | <a href="pwned/it_writeuphtb_cap/">IT</a></li>
     <li><strong>Beep</strong>: <a href="pwned/en_writeuphtb_beep/">EN</a> | <a href="pwned/it_writeuphtb_beep/">IT</a></li>

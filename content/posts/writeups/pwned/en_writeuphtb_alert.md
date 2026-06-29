@@ -3,9 +3,9 @@ date = '2026-05-17T17:39:23+02:00'
 draft = false
 title = 'Alert Writeup EN'
 +++
-**Name:** `joy.scd01`
+**Name:** **`joy.scd01`**
 
-**Date:** `24/01/2025`
+**Date:** **`24/01/2025`**
 
 ![Alert.png](/images/imgs_alert/Alert.png)
 

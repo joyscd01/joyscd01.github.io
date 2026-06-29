@@ -3,9 +3,9 @@ date = '2026-06-17T18:35:49+02:00'
 draft = false
 title = 'BigBang Writeup IT'
 +++
-**Name:** **`joy.scd01`**
+**Nome:** **`joy.scd01`**
 
-**Date:** **`24/01/2025`**
+**Data:** **`01/02/2025`**
 
 ![BigBang.png](/images/imgs_bigbang/BigBang.jpeg)
 
