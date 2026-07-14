@@ -8,9 +8,12 @@ type: "writeups_menu"
 <ul>
     <li><strong>BigBang</strong>: <a href="pwned/en_writeuphtb_bigbang/">EN</a> | <a href="pwned/it_writeuphtb_bigbang/">IT</a></li>
     <li><strong>Certified</strong>: <a href="pwned/en_writeuphtb_certified/">EN</a> | <a href="pwned/it_writeuphtb_certified/">IT</a></li>
+    <li><strong>Support</strong>: <a href="pwned/en_writeuphtb_support/">EN</a> | <a href="pwned/it_writeuphtb_support/">IT</a></li>
+    <li><strong>Fluffy</strong>: <a href="pwned/en_writeuphtb_fluffy/">EN</a> | <a href="pwned/it_writeuphtb_fluffy/">IT</a></li>
     <li><strong>Backfire</strong>: <a href="pwned/en_writeuphtb_backfire/">EN</a> | <a href="pwned/it_writeuphtb_backfire/">IT</a></li>
     <li><strong>Conversor</strong>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a></li>
     <li><strong>Optimum</strong>: <a href="pwned/en_writeuphtb_optimum/">EN</a> | <a href="pwned/it_writeuphtb_optimum/">IT</a></li>
+    <li><strong>Cicada</strong>: <a href="pwned/en_writeuphtb_cicada/">EN</a> | <a href="pwned/it_writeuphtb_cicada/">IT</a></li>
     <li><strong>Expressway</strong>: <a href="pwned/en_writeuphtb_expressway/">EN</a> | <a href="pwned/it_writeuphtb_expressway/">IT</a></li>
     <li><strong>Busqueda</strong>: <a href="pwned/en_writeuphtb_busqueda/">EN</a> | <a href="pwned/it_writeuphtb_busqueda/">IT</a></li>
     <li><strong>Sense</strong>: <a href="pwned/en_writeuphtb_sense/">EN</a> | <a href="pwned/it_writeuphtb_sense/">IT</a></li>
@@ -26,6 +29,9 @@ type: "writeups_menu"
 <details>
 <summary><strong>Vulnlab</strong></summary>
 <ul>
+    <li><strong>Breach</strong>: <a href="pwned/en_writeupvl_breach/">EN</a> | <a href="pwned/it_writeupvl_breach/">IT</a></li>
+    <li><strong>BabyTwo</strong>: <a href="pwned/en_writeupvl_babytwo/">EN</a> | <a href="pwned/it_writeupvl_babytwo/">IT</a></li>
+    <li><strong>Baby</strong>: <a href="pwned/en_writeupvl_baby/">EN</a> | <a href="pwned/it_writeupvl_baby/">IT</a></li>
     <li><strong>Build</strong>: <a href="pwned/en_writeupvl_build/">EN</a> | <a href="pwned/it_writeupvl_build/">IT</a></li>
     <li><strong>Data</strong>: <a href="pwned/en_writeupvl_data/">EN</a> | <a href="pwned/it_writeupvl_data/">IT</a></li>
     <li><strong>Forgotten</strong>: <a href="pwned/en_writeupvl_forgotten/">EN</a> | <a href="pwned/it_writeupvl_forgotten/">IT</a></li>
