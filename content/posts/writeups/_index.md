@@ -13,6 +13,7 @@ type: "writeups_menu"
     <li><strong>Fluffy</strong>: <a href="pwned/en_writeuphtb_fluffy/">EN</a> | <a href="pwned/it_writeuphtb_fluffy/">IT</a></li>
     <li><strong>Backfire</strong>: <a href="pwned/en_writeuphtb_backfire/">EN</a> | <a href="pwned/it_writeuphtb_backfire/">IT</a></li>
     <li><strong>Conversor</strong>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a></li>
+    <li><strong>Querier</strong>: <a href="pwned/en_writeuphtb_querier/">EN</a> | <a href="pwned/it_writeuphtb_querier/">IT</a></li>
     <li><strong>WingData</strong>: <a href="pwned/en_writeuphtb_wingdata/">EN</a> | <a href="pwned/it_writeuphtb_wingdata/">IT</a></li>
     <li><strong>Optimum</strong>: <a href="pwned/en_writeuphtb_optimum/">EN</a> | <a href="pwned/it_writeuphtb_optimum/">IT</a></li>
     <li><strong>Cicada</strong>: <a href="pwned/en_writeuphtb_cicada/">EN</a> | <a href="pwned/it_writeuphtb_cicada/">IT</a></li>
