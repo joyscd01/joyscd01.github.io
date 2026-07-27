@@ -14,7 +14,9 @@ type: "writeups_menu"
     <li><strong>Backfire</strong>: <a href="pwned/en_writeuphtb_backfire/">EN</a> | <a href="pwned/it_writeuphtb_backfire/">IT</a></li>
     <li><strong>Conversor</strong>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a></li>
     <li><strong>Querier</strong>: <a href="pwned/en_writeuphtb_querier/">EN</a> | <a href="pwned/it_writeuphtb_querier/">IT</a></li>
+    <li><strong>Facts</strong>: <a href="pwned/en_writeuphtb_facts/">EN</a> | <a href="pwned/it_writeuphtb_facts/">IT</a></li>
     <li><strong>WingData</strong>: <a href="pwned/en_writeuphtb_wingdata/">EN</a> | <a href="pwned/it_writeuphtb_wingdata/">IT</a></li>
+    <li><strong>Arctic</strong>: <a href="pwned/en_writeuphtb_arctic/">EN</a> | <a href="pwned/it_writeuphtb_arctic/">IT</a></li>
     <li><strong>Optimum</strong>: <a href="pwned/en_writeuphtb_optimum/">EN</a> | <a href="pwned/it_writeuphtb_optimum/">IT</a></li>
     <li><strong>Cicada</strong>: <a href="pwned/en_writeuphtb_cicada/">EN</a> | <a href="pwned/it_writeuphtb_cicada/">IT</a></li>
     <li><strong>CCTV</strong>: <a href="pwned/en_writeuphtb_cctv/">EN</a> | <a href="pwned/it_writeuphtb_cctv/">IT</a></li>
