@@ -7,6 +7,7 @@ type: "writeups_menu"
 <summary><strong>HackTheBox</strong></summary>
 <ul>
     <li><strong>Reddish</strong>: <a href="pwned/en_writeuphtb_reddish/">EN</a> | <a href="pwned/it_writeuphtb_reddish/">IT</a></li>
+    <li><strong>Vintage</strong>: <a href="pwned/en_writeuphtb_vintage/">EN</a> | <a href="pwned/it_writeuphtb_vintage/">IT</a></li>
     <li><strong>BigBang</strong>: <a href="pwned/en_writeuphtb_bigbang/">EN</a> | <a href="pwned/it_writeuphtb_bigbang/">IT</a></li>
     <li><strong>Certified</strong>: <a href="pwned/en_writeuphtb_certified/">EN</a> | <a href="pwned/it_writeuphtb_certified/">IT</a></li>
     <li><strong>Support</strong>: <a href="pwned/en_writeuphtb_support/">EN</a> | <a href="pwned/it_writeuphtb_support/">IT</a></li>
