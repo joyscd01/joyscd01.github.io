@@ -28,8 +28,6 @@ Il lateral movement avviene enumerando la history della repository locale **.git
 
 - **Command Injection su Python GitPython (CVE-2022-24439)**
 
-- **Exploitation tramite SUID Binary**
-
 ---
 # Enumerazione
 

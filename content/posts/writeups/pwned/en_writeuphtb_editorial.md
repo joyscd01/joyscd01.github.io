@@ -28,8 +28,6 @@ Lateral movement is achieved by enumerating the local .git repository history, r
 
 - **Python GitPython Command Injection (CVE-2022-24439)**
 
-- **SUID Binary Exploitation**
-
 ---
 # Enumeration
 

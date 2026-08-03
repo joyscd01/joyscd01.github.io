@@ -111,7 +111,7 @@ Uploaded, installed, and activated it:
 
 Finally, with a **netcat listener running**, I browsed to:
 
-- [http://forgotten/upload/plugins/Y1LD1R1M/](http://forgotten/upload/plugins/Y1LD1R1M/)
+- [http://forgotten/survey/upload/plugins/Y1LD1R1M/php-rev.php](http://forgotten/upload/plugins/Y1LD1R1M/)
 
 To trigger the **reverse shell**:
 

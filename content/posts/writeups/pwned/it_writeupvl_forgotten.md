@@ -112,7 +112,7 @@ Ho _caricato, installato e attivato_ il **plugin**:
 
 A questo punto, dopo aver startato un **listener netcat**, ho navigato all'URL:
 
-- http://forgotten/upload/plugins/Y1LD1R1M/
+- http://forgotten/survey/upload/plugins/Y1LD1R1M/php-rev.php
 
 Per triggherare la **reverse shell**:
 
