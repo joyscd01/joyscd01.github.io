@@ -8,6 +8,7 @@ type: "writeups_menu"
 <ul>
     <li><strong>Reddish</strong>: <a href="pwned/en_writeuphtb_reddish/">EN</a> | <a href="pwned/it_writeuphtb_reddish/">IT</a></li>
     <li><strong>Vintage</strong>: <a href="pwned/en_writeuphtb_vintage/">EN</a> | <a href="pwned/it_writeuphtb_vintage/">IT</a></li>
+    <li><strong>Scrambled</strong>: <a href="pwned/en_writeuphtb_scrambled/">EN</a> | <a href="pwned/it_writeuphtb_scrambled/">IT</a></li>
     <li><strong>BigBang</strong>: <a href="pwned/en_writeuphtb_bigbang/">EN</a> | <a href="pwned/it_writeuphtb_bigbang/">IT</a></li>
     <li><strong>Certified</strong>: <a href="pwned/en_writeuphtb_certified/">EN</a> | <a href="pwned/it_writeuphtb_certified/">IT</a></li>
     <li><strong>Support</strong>: <a href="pwned/en_writeuphtb_support/">EN</a> | <a href="pwned/it_writeuphtb_support/">IT</a></li>
@@ -16,6 +17,7 @@ type: "writeups_menu"
     <li><strong>Conversor</strong>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a></li>
     <li><strong>Querier</strong>: <a href="pwned/en_writeuphtb_querier/">EN</a> | <a href="pwned/it_writeuphtb_querier/">IT</a></li>
     <li><strong>Facts</strong>: <a href="pwned/en_writeuphtb_facts/">EN</a> | <a href="pwned/it_writeuphtb_facts/">IT</a></li>
+    <li><strong>Editorial</strong>: <a href="pwned/en_writeuphtb_editorial/">EN</a> | <a href="pwned/it_writeuphtb_editorial/">IT</a></li>
     <li><strong>WingData</strong>: <a href="pwned/en_writeuphtb_wingdata/">EN</a> | <a href="pwned/it_writeuphtb_wingdata/">IT</a></li>
     <li><strong>Arctic</strong>: <a href="pwned/en_writeuphtb_arctic/">EN</a> | <a href="pwned/it_writeuphtb_arctic/">IT</a></li>
     <li><strong>Optimum</strong>: <a href="pwned/en_writeuphtb_optimum/">EN</a> | <a href="pwned/it_writeuphtb_optimum/">IT</a></li>
