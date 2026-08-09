@@ -18,13 +18,16 @@ type: "writeups_menu"
     <li><strong>Querier</strong>: <a href="pwned/en_writeuphtb_querier/">EN</a> | <a href="pwned/it_writeuphtb_querier/">IT</a></li>
     <li><strong>Facts</strong>: <a href="pwned/en_writeuphtb_facts/">EN</a> | <a href="pwned/it_writeuphtb_facts/">IT</a></li>
     <li><strong>Editorial</strong>: <a href="pwned/en_writeuphtb_editorial/">EN</a> | <a href="pwned/it_writeuphtb_editorial/">IT</a></li>
+    <li><strong>LinkVortex</strong>: <a href="pwned/en_writeuphtb_linkvortex/">EN</a> | <a href="pwned/it_writeuphtb_linkvortex/">IT</a></li>
     <li><strong>WingData</strong>: <a href="pwned/en_writeuphtb_wingdata/">EN</a> | <a href="pwned/it_writeuphtb_wingdata/">IT</a></li>
     <li><strong>Arctic</strong>: <a href="pwned/en_writeuphtb_arctic/">EN</a> | <a href="pwned/it_writeuphtb_arctic/">IT</a></li>
     <li><strong>Optimum</strong>: <a href="pwned/en_writeuphtb_optimum/">EN</a> | <a href="pwned/it_writeuphtb_optimum/">IT</a></li>
     <li><strong>Cicada</strong>: <a href="pwned/en_writeuphtb_cicada/">EN</a> | <a href="pwned/it_writeuphtb_cicada/">IT</a></li>
     <li><strong>CCTV</strong>: <a href="pwned/en_writeuphtb_cctv/">EN</a> | <a href="pwned/it_writeuphtb_cctv/">IT</a></li>
+    <li><strong>Outbound</strong>: <a href="pwned/en_writeuphtb_outbound/">EN</a> | <a href="pwned/it_writeuphtb_outbound/">IT</a></li>
     <li><strong>Expressway</strong>: <a href="pwned/en_writeuphtb_expressway/">EN</a> | <a href="pwned/it_writeuphtb_expressway/">IT</a></li>
     <li><strong>Busqueda</strong>: <a href="pwned/en_writeuphtb_busqueda/">EN</a> | <a href="pwned/it_writeuphtb_busqueda/">IT</a></li>
+    <li><strong>ServMon</strong>: <a href="pwned/en_writeuphtb_servmon/">EN</a> | <a href="pwned/it_writeuphtb_servmon/">IT</a></li>
     <li><strong>Legacy</strong>: <a href="pwned/en_writeuphtb_legacy/">EN</a> | <a href="pwned/it_writeuphtb_legacy/">IT</a></li>
     <li><strong>Sense</strong>: <a href="pwned/en_writeuphtb_sense/">EN</a> | <a href="pwned/it_writeuphtb_sense/">IT</a></li>
     <li><strong>Netmon</strong>: <a href="pwned/en_writeuphtb_netmon/">EN</a> | <a href="pwned/it_writeuphtb_netmon/">IT</a></li>
