@@ -14,7 +14,7 @@ title = 'Buff Writeup IT'
 
 **_Buff_** è una macchina **Windows** di livello **Easy** che si concentra sullo sfruttamento di vulnerabilità note e sulla pratica di competenze come il port forwarding e la binary exploitation.
 
-L'accesso iniziale richiede lo sfruttamento di un'**Unauthenticated Remote Code Execution** in un noto **Gym Management CMS**.
+L'accesso iniziale si ottiene tramite un'**Unauthenticated Remote Code Execution** in un noto **Gym Management CMS**.
 La fase di privilege escalation prevede il **bypass dell'antivirus** per enumerare i servizi interni, la creazione di un tunnel con **Chisel** e, infine, lo sfruttamento di un **Buffer Overflow** locale nell'applicazione **CloudMe** per ottenere una shell come **Administrator**.
 
 ---
