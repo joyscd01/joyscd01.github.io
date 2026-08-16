@@ -31,6 +31,7 @@ type: "writeups_menu"
     <li><strong>Legacy</strong>: <a href="pwned/en_writeuphtb_legacy/">EN</a> | <a href="pwned/it_writeuphtb_legacy/">IT</a></li>
     <li><strong>Sense</strong>: <a href="pwned/en_writeuphtb_sense/">EN</a> | <a href="pwned/it_writeuphtb_sense/">IT</a></li>
     <li><strong>Netmon</strong>: <a href="pwned/en_writeuphtb_netmon/">EN</a> | <a href="pwned/it_writeuphtb_netmon/">IT</a></li>
+    <li><strong>Buff</strong>: <a href="pwned/en_writeuphtb_buff/">EN</a> | <a href="pwned/it_writeuphtb_buff/">IT</a></li>
     <li><strong>Alert</strong>: <a href="pwned/en_writeuphtb_alert/">EN</a> | <a href="pwned/it_writeuphtb_alert/">IT</a></li>
     <li><strong>Cap</strong>: <a href="pwned/en_writeuphtb_cap/">EN</a> | <a href="pwned/it_writeuphtb_cap/">IT</a></li>
     <li><strong>Beep</strong>: <a href="pwned/en_writeuphtb_beep/">EN</a> | <a href="pwned/it_writeuphtb_beep/">IT</a></li>
