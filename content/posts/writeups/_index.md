@@ -14,6 +14,7 @@ type: "writeups_menu"
     <li><strong>Support</strong>: <a href="pwned/en_writeuphtb_support/">EN</a> | <a href="pwned/it_writeuphtb_support/">IT</a></li>
     <li><strong>Fluffy</strong>: <a href="pwned/en_writeuphtb_fluffy/">EN</a> | <a href="pwned/it_writeuphtb_fluffy/">IT</a></li>
     <li><strong>Backfire</strong>: <a href="pwned/en_writeuphtb_backfire/">EN</a> | <a href="pwned/it_writeuphtb_backfire/">IT</a></li>
+    <li><strong>Monitored</strong>: <a href="pwned/en_writeuphtb_monitored/">EN</a> | <a href="pwned/it_writeuphtb_monitored/">IT</a></li>
     <li><strong>Conversor</strong>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a></li>
     <li><strong>Querier</strong>: <a href="pwned/en_writeuphtb_querier/">EN</a> | <a href="pwned/it_writeuphtb_querier/">IT</a></li>
     <li><strong>Facts</strong>: <a href="pwned/en_writeuphtb_facts/">EN</a> | <a href="pwned/it_writeuphtb_facts/">IT</a></li>
