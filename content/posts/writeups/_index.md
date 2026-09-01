@@ -33,6 +33,9 @@ type: "writeups_menu"
     <li><strong>Expressway</strong>: <a href="pwned/en_writeuphtb_expressway/">EN</a> | <a href="pwned/it_writeuphtb_expressway/">IT</a></li>
     <li><strong>Busqueda</strong>: <a href="pwned/en_writeuphtb_busqueda/">EN</a> | <a href="pwned/it_writeuphtb_busqueda/">IT</a></li>
     <li><strong>ServMon</strong>: <a href="pwned/en_writeuphtb_servmon/">EN</a> | <a href="pwned/it_writeuphtb_servmon/">IT</a></li>
+    <li><strong>Driver</strong>: <a href="pwned/en_writeuphtb_driver/">EN</a> | <a href="pwned/it_writeuphtb_driver/">IT</a></li>
+    <li><strong>Return</strong>: <a href="pwned/en_writeuphtb_return/">EN</a> | <a href="pwned/it_writeuphtb_return/">IT</a></li>
+    <li><strong>Heist</strong>: <a href="pwned/en_writeuphtb_heist/">EN</a> | <a href="pwned/it_writeuphtb_heist/">IT</a></li>
     <li><strong>Legacy</strong>: <a href="pwned/en_writeuphtb_legacy/">EN</a> | <a href="pwned/it_writeuphtb_legacy/">IT</a></li>
     <li><strong>Sense</strong>: <a href="pwned/en_writeuphtb_sense/">EN</a> | <a href="pwned/it_writeuphtb_sense/">IT</a></li>
     <li><strong>Netmon</strong>: <a href="pwned/en_writeuphtb_netmon/">EN</a> | <a href="pwned/it_writeuphtb_netmon/">IT</a></li>
