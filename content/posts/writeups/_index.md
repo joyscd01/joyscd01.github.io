@@ -21,6 +21,7 @@ type: "writeups_menu"
     <li><strong>MonitorsFour</strong>: <a href="pwned/en_writeuphtb_monitorsfour/">EN</a> | <a href="pwned/it_writeuphtb_monitorsfour/">IT</a></li>
     <li><strong>Conversor</strong>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a></li>
     <li><strong>Querier</strong>: <a href="pwned/en_writeuphtb_querier/">EN</a> | <a href="pwned/it_writeuphtb_querier/">IT</a></li>
+    <li><strong>Magic</strong>: <a href="pwned/en_writeuphtb_magic/">EN</a> | <a href="pwned/it_writeuphtb_magic/">IT</a></li>
     <li><strong>Facts</strong>: <a href="pwned/en_writeuphtb_facts/">EN</a> | <a href="pwned/it_writeuphtb_facts/">IT</a></li>
     <li><strong>Editorial</strong>: <a href="pwned/en_writeuphtb_editorial/">EN</a> | <a href="pwned/it_writeuphtb_editorial/">IT</a></li>
     <li><strong>LinkVortex</strong>: <a href="pwned/en_writeuphtb_linkvortex/">EN</a> | <a href="pwned/it_writeuphtb_linkvortex/">IT</a></li>
@@ -31,6 +32,7 @@ type: "writeups_menu"
     <li><strong>CCTV</strong>: <a href="pwned/en_writeuphtb_cctv/">EN</a> | <a href="pwned/it_writeuphtb_cctv/">IT</a></li>
     <li><strong>Outbound</strong>: <a href="pwned/en_writeuphtb_outbound/">EN</a> | <a href="pwned/it_writeuphtb_outbound/">IT</a></li>
     <li><strong>Expressway</strong>: <a href="pwned/en_writeuphtb_expressway/">EN</a> | <a href="pwned/it_writeuphtb_expressway/">IT</a></li>
+    <li><strong>Titanic</strong>: <a href="pwned/en_writeuphtb_titanic/">EN</a> | <a href="pwned/it_writeuphtb_titanic/">IT</a></li>
     <li><strong>Busqueda</strong>: <a href="pwned/en_writeuphtb_busqueda/">EN</a> | <a href="pwned/it_writeuphtb_busqueda/">IT</a></li>
     <li><strong>ServMon</strong>: <a href="pwned/en_writeuphtb_servmon/">EN</a> | <a href="pwned/it_writeuphtb_servmon/">IT</a></li>
     <li><strong>Driver</strong>: <a href="pwned/en_writeuphtb_driver/">EN</a> | <a href="pwned/it_writeuphtb_driver/">IT</a></li>
