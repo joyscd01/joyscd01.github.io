@@ -305,7 +305,9 @@ body.cat-mode #cat-reveal-btn {
     -webkit-text-stroke: 0px; 
     text-shadow: none;
 }
-.hacker-directory details[open] summary::before {
+
+/* FIX: Aggiunto il '>' per far cambiare in [-] solo la tendina effettivamente aperta */
+.hacker-directory details[open] > summary::before {
     content: "[-] ";
     color: var(--i3-yellow);
 }
@@ -314,6 +316,13 @@ body.cat-mode #cat-reveal-btn {
     -webkit-text-stroke: 1.2px var(--i3-cyan) !important;
     text-shadow: 0 0 15px var(--i3-cyan) !important;
     transform: translateX(5px); 
+}
+
+/* NUOVA CLASSE PER IL SISTEMA OPERATIVO IN VIOLETTO */
+.hacker-directory .os-tag {
+    color: var(--i3-purple-medium);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(117, 80, 123, 0.4); /* Leggero glow violetto */
 }
 
 .hacker-directory ul {
@@ -666,4 +675,110 @@ main.main > article .post-content pre code {
     border-color: var(--i3-cyan);
     box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
     transform: translateY(-2px);
+}
+
+/* =========================================
+   12. ALBERO DIRECTORY (Trattini e Freccette Sub-Menu)
+   ========================================= */
+.tree-line {
+    border-left: 2px dashed var(--i3-purple-medium);
+    padding-left: 20px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Distanzia in modo pulito le categorie tra loro */
+.tree-line > details > summary {
+    margin-top: 15px; 
+}
+
+/* 1. La freccia diventa viola e resta fissa SEMPRE (sovrascrive i vecchi CSS) */
+.hacker-directory .tree-line > details > summary::before,
+.hacker-directory .tree-line > details[open] > summary::before {
+    content: "➜ ";
+    color: var(--i3-purple-medium);
+}
+
+/* 2. Il [+] diventa azzurro ed è gestito dal testo (tag strong) */
+.tree-line > details > summary > strong::before {
+    content: "[+] ";
+    color: var(--i3-cyan);
+    -webkit-text-stroke: 0px; 
+    text-shadow: none;
+}
+
+/* 3. Il [-] diventa giallo quando la tendina si apre */
+.tree-line > details[open] > summary > strong::before {
+    content: "[-] ";
+    color: var(--i3-yellow);
+    -webkit-text-stroke: 0px; 
+    text-shadow: none;
+}
+
+/* =========================================
+   13. TAGS & CHEATSHEET (Tech Dropdown)
+   ========================================= */
+.tech-dropdown {
+    display: inline;
+    margin-left: 10px;
+}
+
+.tech-dropdown summary {
+    display: inline;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1rem; /* Leggermente più grande per far risaltare la freccia */
+    transition: all 0.3s ease !important;
+}
+
+.tech-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+/* FIX: Forza la vera freccia e il colore viola (battendo le regole precedenti) */
+.hacker-directory .tech-dropdown summary::before {
+    content: "↓ " !important; 
+    color: var(--i3-purple-medium) !important;
+    font-family: 'Fira Code', monospace !important;
+    font-weight: bold;
+    -webkit-text-stroke: 0px !important;
+    text-shadow: none !important;
+}
+
+/* Effetto hover sulla freccia */
+.hacker-directory .tech-dropdown summary:hover::before {
+    color: var(--i3-cyan) !important;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.4) !important;
+}
+
+/* Diventa gialla quando i tag sono aperti */
+.hacker-directory .tech-dropdown[open] summary::before {
+    color: var(--i3-yellow) !important;
+}
+
+/* I tag in colonna verticale */
+.tech-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Spazio verticale tra un hashtag e l'altro */
+    margin-top: 8px; /* Spinge la lista sotto la riga della macchina */
+    margin-left: 15px; /* Crea un leggero rientro a destra */
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(50, 29, 104, 0.2);
+    border-left: 2px solid var(--i3-cyan);
+    padding: 8px 15px;
+    border-radius: 4px;
+    width: max-content; /* Evita che il riquadro occupi tutto lo schermo */
+}
+
+/* Effetto terminale quando passi sopra al singolo hashtag */
+.tech-list span {
+    transition: color 0.2s ease;
+}
+
+.tech-list span:hover {
+    color: var(--i3-cyan);
+    cursor: crosshair; 
 }

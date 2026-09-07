@@ -3,7 +3,7 @@ date = '2026-07-21T16:13:09+02:00'
 draft = false
 title = 'WingData Writeup IT'
 +++
-**Nome**: **`joy.scd01`**
+**Autore**: **`joy.scd01`**
 
 **Data**: **`24/02/2026`**
 

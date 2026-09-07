@@ -3,7 +3,7 @@ date = '2026-06-24T19:25:01+02:00'
 draft = false
 title = 'Netmon Writeup IT'
 +++
-**Nome**: **`joy.scd01`**
+**Autore**: **`joy.scd01`**
 
 **Data**: **`15/02/2025`**
 

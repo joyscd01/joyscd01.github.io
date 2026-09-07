@@ -3,9 +3,9 @@ date = '2026-07-07T18:17:42+02:00'
 draft = false
 title = 'BabyTwo Writeup IT'
 +++
-**Name**: **`joy.scd01`**
+**Autore**: **`joy.scd01`**
 
-**Date**: **`09/06/2026`**
+**Data**: **`09/06/2026`**
 
 ![BabyTwo.png](/images/imgs_babytwo/BabyTwo.png)
 

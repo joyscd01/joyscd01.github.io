@@ -14,35 +14,66 @@
 <!-- Lo script per il filtro istantaneo -->
 <script>
 document.getElementById('writeupSearch').addEventListener('keyup', function() {
-    let filter = this.value.toLowerCase();
-    let detailsBlocks = document.querySelectorAll('.hacker-directory details');
+    let rawSearch = this.value.toLowerCase();
+    let isTechSearch = rawSearch.startsWith('$');
+    // Rimuove il $ iniziale per fare la vera e propria ricerca
+    let filter = isTechSearch ? rawSearch.substring(1).trim() : rawSearch.trim();
+    
+    let categoryBlocks = document.querySelectorAll('.hacker-directory details:not(.tech-dropdown)');
 
-    detailsBlocks.forEach(detail => {
-        let items = detail.querySelectorAll('li');
+    categoryBlocks.forEach(category => {
+        let items = category.querySelectorAll('li');
         let hasVisibleItem = false;
 
         items.forEach(item => {
-            let text = item.textContent.toLowerCase();
-            if (text.includes(filter)) {
+            let techDetails = item.querySelector('.tech-dropdown');
+            let techText = techDetails ? techDetails.textContent.toLowerCase() : "";
+            
+            // Separiamo logicamente il testo della macchina da quello dei tag
+            let mainText = item.textContent.toLowerCase().replace(techText, "");
+            
+            let isMatch = false;
+
+            if (rawSearch === '') {
+                isMatch = true; // Barra vuota: mostra tutto
+            } else if (isTechSearch) {
+                // Modalità Cheatsheet: cerca SOLO nelle tecniche (se ha digitato qualcosa dopo il $)
+                if (filter !== '' && techText.includes(filter)) {
+                    isMatch = true;
+                }
+            } else {
+                // Ricerca Normale: cerca SOLO nel nome della macchina e nell'OS
+                if (mainText.includes(filter)) {
+                    isMatch = true;
+                }
+            }
+
+            if (isMatch) {
                 item.style.display = '';
-                hasVisibleItem = true;
+                if (rawSearch !== '') hasVisibleItem = true;
+                
+                // Se c'è un match in modalità tecnica, apri la tendina per evidenziarlo
+                if (techDetails) {
+                    techDetails.open = (isTechSearch && filter !== '');
+                }
             } else {
                 item.style.display = 'none';
+                if (techDetails) techDetails.open = false;
             }
         });
 
-        // Se sto cercando qualcosa, apri la tendina se contiene risultati
-        if (filter !== '') {
+        // Gestione espansione automatica delle categorie (Easy, Medium, ecc.)
+        if (rawSearch !== '') {
             if (hasVisibleItem) {
-                detail.open = true;
-                detail.style.display = '';
+                category.open = true;
+                category.style.display = '';
             } else {
-                detail.style.display = 'none'; // Nascondi intera piattaforma se non ha match
+                category.style.display = 'none';
             }
         } else {
-            // Se svuoto la barra, mostra tutte le piattaforme e chiudi le tendine
-            detail.style.display = '';
-            detail.open = false;
+            // Se la barra viene svuotata, richiudi tutte le categorie
+            category.style.display = '';
+            category.open = false;
         }
     });
 });

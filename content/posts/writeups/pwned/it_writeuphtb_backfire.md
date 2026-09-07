@@ -3,7 +3,7 @@ date = '2026-05-20T19:40:31+02:00'
 draft = false
 title = 'Backfire Writeup IT'
 +++
-**Nome:** **`joy.scd01`**
+**Autore:** **`joy.scd01`**
 
 **Data:** **`24/01/2025`**
 

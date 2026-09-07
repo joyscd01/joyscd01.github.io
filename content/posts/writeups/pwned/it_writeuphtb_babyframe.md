@@ -3,7 +3,7 @@ date = '2026-08-16T11:06:38+02:00'
 draft = true
 title = 'Baby Frame Writeup IT'
 +++
-**Author**: **`joy.scd01`**
+**Autore**: **`joy.scd01`**
 
 **Date**: **`15/08/2026`**
 

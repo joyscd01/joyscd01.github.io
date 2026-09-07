@@ -3,7 +3,7 @@ date = '2026-05-20T18:45:07+02:00'
 draft = false
 title = 'Conversor Writeup EN'
 +++
-**Name:** **`joy.scd01`**
+**Author:** **`joy.scd01`**
 
 **Date:** **`24/01/2025`**
 

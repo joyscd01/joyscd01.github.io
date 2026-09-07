@@ -3,7 +3,7 @@ date = '2026-06-17T18:35:49+02:00'
 draft = false
 title = 'BigBang Writeup IT'
 +++
-**Nome:** **`joy.scd01`**
+**Autore:** **`joy.scd01`**
 
 **Data:** **`01/02/2025`**
 

@@ -3,7 +3,7 @@ date = '2026-07-09T15:57:07+02:00'
 draft = false
 title = 'Support Writeup IT'
 +++
-**Nome**: **`joy.scd01`**
+**Autore**: **`joy.scd01`**
 
 **Data**: **`09/06/2026`**
 

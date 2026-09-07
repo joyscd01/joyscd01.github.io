@@ -3,7 +3,6 @@ date = '2026-07-22T17:24:22+02:00'
 draft = false
 title = 'Querier Writeup IT'
 +++
-
 **Autore**: **`joy.scd01`**
 
 **Date**: **`22/07/2026`**

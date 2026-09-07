@@ -3,7 +3,7 @@ date = '2026-05-23T19:18:35+02:00'
 draft = false
 title = 'Data Writeup EN'
 +++
-**Name**: **`joy.scd01`**
+**Author**: **`joy.scd01`**
 
 **Date**: **`06/05/2025`**
 
