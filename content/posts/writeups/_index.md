@@ -345,6 +345,32 @@ type: "writeups_menu"
     </details>
 </li>
 <li>
+    <strong>Code</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_code/">EN</a> | <a href="pwned/it_writeuphtb_code/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#python-sandbox-evasion</span>
+            <span>#string-slicing</span>
+            <span>#sqlite-dump</span>
+            <span>#path-traversal</span>
+            <span>#regex-bypass</span>
+        </span>
+    </details>
+</li>
+<li>
+    <strong>CodePartTwo</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_codeparttwo/">EN</a> | <a href="pwned/it_writeuphtb_codeparttwo/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#js2py-sandbox-escape</span>
+            <span>#cve-2024-28397</span>
+            <span>#sqlite-dump</span>
+            <span>#sudo-misconfiguration</span>
+            <span>#arbitrary-file-read</span>
+        </span>
+    </details>
+</li>
+<li>
     <strong>Conversor</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_conversor/">EN</a> | <a href="pwned/it_writeuphtb_conversor/">IT</a>
     <details class="tech-dropdown">
         <summary></summary>
