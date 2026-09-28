@@ -114,6 +114,21 @@ type: "writeups_menu"
     </details>
 </li>
 <li>
+    <strong>Cat</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_cat/">EN</a> | <a href="pwned/it_writeuphtb_cat/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#snyk</span>
+            <span>#stored-xss</span>
+            <span>#sqlite-injection</span>
+            <span>#attach-database</span>
+            <span>#gitea-1.22.0</span>
+            <span>#cve-2024-6886</span>
+            <span>#data-exfiltration</span>
+        </span>
+    </details>
+</li>
+<li>
     <strong>Certified</strong> <span class="os-tag">[Windows]</span>: <a href="pwned/en_writeuphtb_certified/">EN</a> | <a href="pwned/it_writeuphtb_certified/">IT</a>
     <details class="tech-dropdown">
         <summary></summary>
@@ -382,6 +397,20 @@ type: "writeups_menu"
             <span>#sudo-needrestart</span>
             <span>#cve-2024-48990</span>
             <span>#pythonpath-hijacking</span>
+        </span>
+    </details>
+</li>
+<li>
+    <strong>Dog</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_dog/">EN</a> | <a href="pwned/it_writeuphtb_dog/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#git-dumper</span>
+            <span>#backdrop-cms</span>
+            <span>#authenticated-rce</span>
+            <span>#password-reuse</span>
+            <span>#sudo-misconfiguration</span>
+            <span>#bee</span>
         </span>
     </details>
 </li>
