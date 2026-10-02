@@ -88,7 +88,7 @@ searchsploit cacti 1.2.22
 
 The search revealed the **CVE-2022-46169**.
 
-**Note**: _This is a critical **Unauthenticated Command Injection** vulnerability. To exploit it, an attacker needs to bypass the authorization check (often by spoofing the **`X-Forwarded-For`** header with the local IP) and inject commands via the **`poller_id`** parameter of the **`remote_agent.php`** endpoint. 
+**Note**: _This is a critical **Unauthenticated Command Injection** vulnerability. To exploit it, an attacker needs to bypass the authorization check (often by spoofing the **`X-Forwarded-For`** header with the local IP) and inject commands via the **`poller_id`** parameter of the **`remote_agent.php`** endpoint._ 
 
 ---
 # Initial Access | Cacti Command Injection (Manual)
