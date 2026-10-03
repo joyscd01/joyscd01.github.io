@@ -585,6 +585,21 @@ type: "writeups_menu"
     </details>
 </li>
 <li>
+    <strong>Nexus</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_nexus/">EN</a> | <a href="pwned/it_writeuphtb_nexus/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#information-disclosure</span>
+            <span>#gitea</span>
+            <span>#krayin-crm</span>
+            <span>#cve-2026-38526</span>
+            <span>#password-reuse</span>
+            <span>#path-traversal</span>
+            <span>#git-internals</span>
+        </span>
+    </details>
+</li>
+<li>
     <strong>Optimum</strong> <span class="os-tag">[Windows]</span>: <a href="pwned/en_writeuphtb_optimum/">EN</a> | <a href="pwned/it_writeuphtb_optimum/">IT</a>
     <details class="tech-dropdown">
         <summary></summary>
@@ -613,6 +628,20 @@ type: "writeups_menu"
             <span>#cve-2025-27591</span>
             <span>#symlink-attack</span>
             <span>#passwd-manipulation</span>
+        </span>
+    </details>
+</li>
+<li>
+    <strong>Reactor</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_reactor/">EN</a> | <a href="pwned/it_writeuphtb_reactor/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#nextjs</span>
+            <span>#react2shell</span>
+            <span>#cve-2025-55182</span>
+            <span>#database-dump</span>
+            <span>#hash-cracking</span>
+            <span>#nodejs-debugger</span>
         </span>
     </details>
 </li>

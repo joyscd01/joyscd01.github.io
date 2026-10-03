@@ -3,9 +3,9 @@ date = '2026-05-20T19:40:34+02:00'
 draft = false
 title = 'Backfire Writeup EN'
 +++
-**Author:** `joy.scd01`
+**Author:** **`joy.scd01`**
 
-**Date:** `24/01/2025`
+**Date:** **`24/01/2025`**
 
 ![Backfire.png](/images/imgs_backfire/Backfire.png)
 
