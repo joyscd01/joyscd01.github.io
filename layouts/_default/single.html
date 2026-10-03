@@ -42,14 +42,6 @@
   </div>
   {{- end }}
 
-  {{- if .Content }}
-  <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-  </div>
-  {{- end }}
-
 <!-- BUY ME A COFFEE LINK -->
   <hr>
   <style>
@@ -77,19 +69,17 @@
     .bmac-btn:hover {
       background-color: var(--i3-purple-medium);
       border-color: var(--i3-cyan); 
-      box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3); /* Bagliore cyan della tua palette */
+      box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
       transform: translateY(-2px);
-      color: var(--i3-yellow) !important; /* Fa brillare il testo di giallo */
+      color: var(--i3-yellow) !important;
     }
   </style>
 
   <div class="bmac-container">
-    <p>Did this write-up help you pwn the box?</p>
+    <p>Did this writeup help you pwn the box?</p>
     <a href="https://buymeacoffee.com/joyscd01" target="_blank" rel="noopener noreferrer" class="bmac-btn">Support my work ☄️</a>
   </div>
   <!-- FINE BUY ME A COFFEE -->
-
-  <footer class="post-footer">
 
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
