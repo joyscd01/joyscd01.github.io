@@ -1,6 +1,6 @@
 +++
 date = '2026-09-29T19:10:17+02:00'
-draft = true
+draft = false
 title = 'Nexus Writeup IT'
 +++
 **Autore**: **`joy.scd01`**
