@@ -447,6 +447,22 @@ type: "writeups_menu"
     </details>
 </li>
 <li>
+    <strong>Explore</strong> <span class="os-tag">[Android]</span>: <a href="pwned/en_writeuphtb_explore/">EN</a> | <a href="pwned/it_writeuphtb_explore/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#es-file-explorer</span>
+            <span>#cve-2019-6447</span>
+            <span>#arbitrary-file-read</span>
+            <span>#information-disclosure</span>
+            <span>#legacy-ssh</span>
+            <span>#ssh-local-port-forwarding</span>
+            <span>#adb-exploitation</span>
+            <span>#su-root</span>
+        </span>
+    </details>
+</li>
+<li>
     <strong>Expressway</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_expressway/">EN</a> | <a href="pwned/it_writeuphtb_expressway/">IT</a>
     <details class="tech-dropdown">
         <summary></summary>
