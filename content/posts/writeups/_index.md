@@ -54,6 +54,22 @@ type: "writeups_menu"
     </details>
 </li>
 <li>
+    <strong>Caption</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_caption/">EN</a> | <a href="pwned/it_writeuphtb_caption/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#h2c-smuggling</span>
+            <span>#cache-poisoning</span>
+            <span>#stored-xss</span>
+            <span>#copyparty</span>
+            <span>#cve-2023-37474</span>
+            <span>#apache-thrift</span>
+            <span>#go-rpc-client</span>
+            <span>#suid-command-injection</span>
+        </span>
+    </details>
+</li>
+<li>
     <strong>Monitors</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeuphtb_monitors/">EN</a> | <a href="pwned/it_writeuphtb_monitors/">IT</a>
     <details class="tech-dropdown">
         <summary></summary>
