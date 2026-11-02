@@ -84,7 +84,7 @@ I added **`caption.htb`** to my **`/etc/hosts`** file.
 
 I ran a background **gobuster** scan and **ffuf**, finding nothing of interest. The web page on port **`80`** was just a login portal.
 
-![web1.png](/images/imgs_caption/web1.pngz)
+![web1.png](/images/imgs_caption/web1.png)
 
 I shifted my focus to the **Jetty HTTP** service on port **`8080`** where a **GitBucket** instance was hosted. 
 

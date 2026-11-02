@@ -84,7 +84,7 @@ Ho aggiunto **`caption.htb`** al mio file **`/etc/hosts`**.
 
 Ho lanciato due scansioni in background con **gobuster** e **ffuf**, che non hanno rilevato nulla di interessante. Sulla porta **`80`** era hostato un login portal.
 
-![web1.png](/images/imgs_caption/web1.pngz)
+![web1.png](/images/imgs_caption/web1.png)
 
 Ho spostato la mia attenzione sul servizio **Jetty HTTP** sulla porta **`8080`**, dove era hostata un'istanza **GitBucket**.
 

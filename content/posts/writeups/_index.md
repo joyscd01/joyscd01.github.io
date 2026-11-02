@@ -907,6 +907,25 @@ type: "writeups_menu"
     </details>
 </li>
 <li>
+    <strong>Phantom</strong> <span class="os-tag">[Windows]</span>: <a href="pwned/en_writeupvl_phantom/">EN</a> | <a href="pwned/it_writeupvl_phantom/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#anonymous-smb</span>
+            <span>#rid-bruteforcing</span>
+            <span>#password-spraying</span>
+            <span>#veracrypt</span>
+            <span>#custom-wordlist</span>
+            <span>#bloodhound</span>
+            <span>#forcechangepassword</span>
+            <span>#spn-less-rbcd</span>
+            <span>#u2u</span>
+            <span>#pass-the-hash</span>
+            <span>#ntds-dump</span>
+        </span>
+    </details>
+</li>
+<li>
     <strong>Sync</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeupvl_sync/">EN</a> | <a href="pwned/it_writeupvl_sync/">IT</a>
     <details class="tech-dropdown">
         <summary></summary>
