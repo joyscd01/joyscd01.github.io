@@ -926,6 +926,21 @@ type: "writeups_menu"
     </details>
 </li>
 <li>
+    <strong>Sendai</strong> <span class="os-tag">[Windows]</span>: <a href="pwned/en_writeupvl_sendai/">EN</a> | <a href="pwned/it_writeupvl_sendai/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#rid-bruteforcing</span>
+            <span>#forced-password-change</span>
+            <span>#genericall</span>
+            <span>#gmsa-abuse</span>
+            <span>#chisel-pivoting</span>
+            <span>#silver-ticket</span>
+            <span>#mssql</span>
+        </span>
+    </details>
+</li>
+<li>
     <strong>Sync</strong> <span class="os-tag">[Linux]</span>: <a href="pwned/en_writeupvl_sync/">EN</a> | <a href="pwned/it_writeupvl_sync/">IT</a>
     <details class="tech-dropdown">
         <summary></summary>
