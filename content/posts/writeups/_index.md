@@ -958,6 +958,24 @@ type: "writeups_menu"
         </span>
     </details>
 </li>
+<li>
+    <strong>Sweep</strong> <span class="os-tag">[Windows]</span>: <a href="pwned/en_writeupvl_sweep/">EN</a> | <a href="pwned/it_writeupvl_sweep/">IT</a>
+    <details class="tech-dropdown">
+        <summary></summary>
+        <span class="tech-list">
+            <span>#rid-bruteforcing</span>
+            <span>awk</span>
+            <span>#password-spraying</span>
+            <span>#bloodhound</span>
+            <span>#lansweeper</span>
+            <span>#fakessh</span>
+            <span>#credential-sniffing</span>
+            <span>#genericall</span>
+            <span>#pth-net</span>
+            <span>#credential-decryption</span>
+        </span>
+    </details>
+</li>
 </ul>
 </details>
 </div>
