@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (profileDiv) {
         
         // 1. Chiediamo a Hugo di prendere i file e creare un oggetto dati pulito (nessun tag HTML qui!)
-        {{ $pages := where site.RegularPages "Type" "in" (slice "posts" "writeups") }}
+        {{ $pages := where site.RegularPages "Type" "in" (slice "posts" "writeups" "journal") }}
         {{ $pages = $pages.ByDate.Reverse }}
         {{ $postsData := slice }}
         {{ range first 5 $pages }}

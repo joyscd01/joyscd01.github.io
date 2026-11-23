@@ -76,7 +76,9 @@
   </style>
 
   <div class="bmac-container">
-    <p>Did this writeup help you pwn the box?</p>
+    {{- if ne .Section "journal" }}
+      <p>Did this writeup help you pwn the box?</p>
+    {{- end }}
     <a href="https://buymeacoffee.com/joyscd01" target="_blank" rel="noopener noreferrer" class="bmac-btn">Support my work ☄️</a>
   </div>
   <!-- FINE BUY ME A COFFEE -->

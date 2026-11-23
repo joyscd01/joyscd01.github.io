@@ -111,7 +111,7 @@ main.main:has(.profile_inner) {
     -webkit-text-stroke: 1.5px var(--i3-cyan);
     text-shadow: 0 0 20px var(--i3-cyan);
     color: var(--i3-cyan) !important;
-    trasform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 /* =========================================
@@ -781,4 +781,70 @@ main.main > article .post-content pre code {
 .tech-list span:hover {
     color: var(--i3-cyan);
     cursor: crosshair; 
+}
+
+/* =========================================
+14. JOURNAL POST CARDS (PaperMod List View)
+   ========================================= */
+.post-entry {
+    background: rgba(10, 10, 15, 0.85) !important;
+    border: 1px solid var(--i3-purple-medium) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+    padding: 24px 28px !important;
+    margin-bottom: 20px !important;
+    font-family: 'Fira Code', monospace !important;
+    transition: all 0.3s ease !important;
+}
+
+.post-entry:hover {
+    border-color: var(--i3-cyan) !important;
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.15) !important;
+    transform: translateY(-3px);
+}
+
+.post-entry .entry-header h2 {
+    color: var(--i3-yellow) !important;
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 800 !important;
+    font-size: 1.35rem !important;
+    margin-bottom: 8px !important;
+    transition: color 0.3s ease;
+}
+
+.post-entry:hover .entry-header h2 {
+    color: var(--i3-cyan) !important;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+
+.post-entry .entry-content {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin: 10px 0 14px 0 !important;
+    -webkit-line-clamp: 3;
+}
+
+.post-entry .entry-footer {
+    color: rgba(255, 255, 255, 0.65) !important;
+    font-size: 0.85rem !important;
+}
+
+.post-entry .entry-footer span {
+    color: var(--i3-purple-medium);
+    font-weight: 700;
+}
+
+/* Intestazione della pagina /journal/ */
+.page-header h1 {
+    color: var(--i3-white) !important;
+    -webkit-text-stroke: 1px var(--i3-cyan) !important;
+    text-shadow: 0 0 12px rgba(0, 229, 255, 0.6) !important;
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 800 !important;
+}
+
+.page-header .post-description {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: 'Fira Code', monospace !important;
 }
